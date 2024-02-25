@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                             // Password matches, login successful
                             Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this, Home.class);
+                            intent.putExtra("username", username);
                             startActivity(intent);
                             return;
                         }

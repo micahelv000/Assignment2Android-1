@@ -15,8 +15,7 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         String username = getIntent().getStringExtra("username");
-        String password = getIntent().getStringExtra("password");
         TextView TextMSGHllo = findViewById(R.id.userDetailMSG);
-        TextMSGHllo.setText("username: " + username +" password: "+password);
+        TextMSGHllo.setText("Hi, " + username + "Welcome to home page");
     }
 }
