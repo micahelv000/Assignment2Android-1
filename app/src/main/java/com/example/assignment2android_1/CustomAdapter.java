@@ -52,7 +52,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, int position) {
         final Item dataModel = dataSet.get(position);
         holder.textViewName.setText(dataModel.getName());
-        holder.textAmount.setText("amount left: "+String.valueOf(dataModel.getAmount()));
+        holder.textAmount.setText("amount have: "+String.valueOf(dataModel.getAmount()));
         holder.textPrice.setText(String.valueOf(dataModel.getPrice())+" ₪");
 
         //holder.imageView.setImageResource();

@@ -17,6 +17,7 @@
             android:layout_margin="8dp"
             android:outlineProvider="bounds"
             android:scaleType="centerCrop"
+            android:background="@drawable/common_google_signin_btn_icon_dark_focused"
             tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
@@ -76,5 +77,9 @@
         </LinearLayout>
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"/>
 
 </androidx.cardview.widget.CardView>
