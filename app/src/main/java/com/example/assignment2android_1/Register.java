@@ -64,6 +64,7 @@ public class Register extends AppCompatActivity {
                         // Start Home activity or perform any other desired action
                         Intent intent = new Intent(Register.this, Home.class);
                         intent.putExtra("username", username);
+                        intent.putExtra("userId", userId);
                         startActivity(intent);
                     } else {
                         // Validation failed, display a message to the user

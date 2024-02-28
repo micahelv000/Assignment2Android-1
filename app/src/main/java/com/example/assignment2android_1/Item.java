@@ -3,13 +3,16 @@ package com.example.assignment2android_1;
 public class Item {
     private String name;
     private int amount;
-    private int price;
+    private double price;
+
+    private int image;
 
     public Item() {}
-    public Item(String name, int amount, int price) {
+    public Item(String name, int amount, double price, int image) {
         this.name = name;
         this.amount = amount;
         this.price = price;
+        this.image = image;
     }
 
 
@@ -29,11 +32,15 @@ public class Item {
         this.amount = amount;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public int getImage() {
+        return image;
     }
 }

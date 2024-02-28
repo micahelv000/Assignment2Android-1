@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this, Home.class);
                             intent.putExtra("username", username);
+                            intent.putExtra("userId", snapshot.getKey());
                             startActivity(intent);
                             return;
                         }

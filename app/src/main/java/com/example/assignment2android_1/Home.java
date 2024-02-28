@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -59,7 +60,8 @@ public class Home extends AppCompatActivity {
             dataSet.add(new Item(
                     myData.nameArray[i],
                     Integer.parseInt(myData.amount[i]), // add later pull from the firebase of actual amount.
-                    Integer.parseInt(myData.price[i])
+                    Double.parseDouble(myData.price[i]),
+                    myData.drawableArray[i]
             ));
         }
         filteredDataSet.addAll(dataSet);

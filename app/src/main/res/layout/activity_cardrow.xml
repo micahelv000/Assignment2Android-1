@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:padding="10dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +37,7 @@
                 android:gravity="center"
                 android:padding="10px"
                 android:text="TextView"
+                android:textColor="#000000"
                 android:textSize="30sp" />
 
             <TextView
@@ -41,6 +47,7 @@
                 android:gravity="center"
                 android:padding="10px"
                 android:text="TextView"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <TextView
@@ -50,6 +57,7 @@
                 android:gravity="center"
                 android:padding="10px"
                 android:text="TextView"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -62,16 +70,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Add"/>
-
-
+                    android:text="Add"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"/>
 
                 <Button
                     android:id="@+id/button_Remove"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Remove" />
+                    android:text="Remove"
+                    android:backgroundTint="#F44336"
+                    android:textColor="#FFFFFF"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -80,6 +90,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@android:color/darker_gray"/>
+        android:background="#BDBDBD"/>
 
 </androidx.cardview.widget.CardView>
